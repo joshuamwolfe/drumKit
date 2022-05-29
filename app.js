@@ -1,4 +1,5 @@
 // global variables
+"use strict";
 const sanityCheck = "Sanity Check.";
 const iGotClicked = "I got clicked!";
 const button = document.querySelectorAll(".drum");
@@ -11,8 +12,26 @@ for (i of button) {
   });
 }
 
-function handleClick() {
-  console.info("I got clicked.");
+// practice
+// create a calculator function group
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+function subtract(num1, num2) {
+  return num1 - num2;
+}
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+
+function divide(num1, num2) {
+  return num1 / num2;
+}
+
+function calculator(num1, num2, operator) {
+  return operator(num1, num2);
 }
 
 // delete me when done
